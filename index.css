@@ -1,0 +1,12 @@
+.dark{
+    color: white;
+    background-color: rgb(80, 77, 77);
+}
+
+#counter {
+    display: flex;
+}
+
+#sub, #count, #add, #reset {
+    margin:auto
+}
