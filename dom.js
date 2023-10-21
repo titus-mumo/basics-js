@@ -60,3 +60,34 @@ reset.addEventListener('click', function(){
     count.innerHTML = 0
 })
 
+// list.addEventListener('click', (event) => {
+//     if(event.target.tagName === 'LI'){
+//         event.target.remove()
+//     }
+// })
+
+addSubjectButton = document.getElementById('add-product')
+addSubjectButton.addEventListener('click', () =>{
+    subject = prompt("Enter a new subject")
+    //console.log(subject.length)
+    console.log(subject)
+    if ((typeof subject === 'string' && subject.length !== 0) && (typeof subject !== 'object')){
+        const newLi = document.createElement('li')
+        newLi.innerHTML = subject
+        newLi.style.color = 'blue'
+        //list.prepend(newLi)
+        list.append(newLi)
+    }
+})
+
+list.addEventListener('copy', function(){
+    alert('we noticed you copied')
+})
+
+let input = document.querySelector('#input')
+input.addEventListener('paste', () => {
+    alert("We don't encourage pasting on this website")
+})
+
+
+//no case -//d2brenkan@yahoo.co.uk 
