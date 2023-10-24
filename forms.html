@@ -8,18 +8,19 @@
 </head>
 <body>
     <p>Forms</p>
-    <form>
+    <form class="identity-form" onsubmit="handleSubmit(event)">
         <label for="name">Name</label>
         <br>
-        <input name="name" placeholder="Enter name"/>
+        <input type="string" name="name" placeholder="Enter name" autocomplete="off" id="name"/>
         <br>
         <br>
         <label for="age">Age</label>
         <br>
-        <input name="age" placeholder="Enter age"/>
+        <input type="number" name="age" placeholder="Enter age" autocomplete="off" id="age"/>
         <br>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit" value="Submit" id="submit">Submit</button>
+        <p id="form-message"></p>
     </form>
     <script src="forms.js"></script>
 </body>

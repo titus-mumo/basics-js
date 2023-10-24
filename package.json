@@ -5,12 +5,15 @@
   "main": "basics.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon dom.js"
+    "dev": "nodemon array_methods.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }

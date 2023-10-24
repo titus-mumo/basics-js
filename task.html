@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="task.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Task</title>
+</head>
+<body>
+    <div id="task-body">
+        <div>
+            <form id="search-form">
+                <input name="search" placeholder="Search" autocomplete="off" id="search" onkeyup="handleSearch(event)"/>
+            </form>
+        </div>
+        <br>
+        <div id="task-list" onchange="apply(event)">
+        </div>
+        <br>
+        <div>
+            <form id="add-task" onsubmit="handleSubmit(event)">
+                <input name="task" autocomplete="off" placeholder="Add a task"/>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <div id="message-div">
+    <p id="message"></p><span onclick="handleDeleteAll(event)" class="clear">Clear All</span>
+    </div>
+    <script src="task.js"></script>
+</body>
+</html>

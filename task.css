@@ -1,0 +1,51 @@
+body{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 30px;
+}
+#task-body{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 3px;
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    font: 30px;
+}
+#message-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: auto;
+}
+.task{
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.delete:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.clear:hover{
+    cursor: pointer;
+}
+.clear{
+    border: 1px solid black;
+    margin:10px;
+    padding:2px;
+    border-radius: 2px;
+}
+#message{
+    margin: 10px;
+}

@@ -1,6 +1,21 @@
 form{
-    border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
     display: inline-block;
+}
+
+.success{
+    color: white;
+    background-color: green;
+}
+
+.error{
+    color:white;
+    background-color: red;
+}
+.accepted{
+    border-color: green;
+}
+.rejected{
+    border-color: red;
 }
