@@ -29,9 +29,16 @@ p{
 .task{
     border: 1px solid black;
     border-radius: 2px;
+    padding: 2px;;
 }
 .delete:hover{
     cursor: pointer;
+}
+
+.delete{
+    color: white;
+    background-color: red;
+    border-radius: 2px;
 }
 
 button:hover{
@@ -48,4 +55,10 @@ button:hover{
 }
 #message{
     margin: 10px;
+}
+
+button{
+    background-color: green;
+    border-radius: 2px;
+    color: white;
 }
