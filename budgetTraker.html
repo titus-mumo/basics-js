@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="./budgetTraker.css" rel="stylesheet"></link>
+    <title>Track - Seemless budget tracker</title>
+</head>
+<body>
+    <div class="main">
+        <div class="upper">
+            <div class="add-transaction">
+                <h3><u>Add Transaction</u></h3>
+                <form class="input-form" onsubmit="handleSubmit(event)">
+                    <input id="source" type="string" name="source" required autocomplete="off" placeholder="Source"/><br>
+                    <input id="amount" type='number'name="amount" required autocomplete="off" placeholder="Amount"/><br>
+                    <button type="submit"> Add Transaction</button>
+                </form>
+            </div>
+            <div class="stats">
+                <h2><u>Statistics</u></h2>
+                <p>Balance: $ <span id="balance"></span></p>
+                <p>Income: $ <span id="income-total"></span></p>
+                <p>Expense: $ <span id="expense-total"></span></p>
+            </div>
+        </div>
+        <div class="lower">
+            Transaction history
+            <div class="detail">
+                <div class="income">
+                    <h2><u>Income</u></h2>
+                    <div class="income-div"></div>
+                </div>
+                <div class="expense">
+                    <h2><u>Expense</u></h2>
+                    <div class="expense-div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./budgetTraker.js"></script>
+</body>
+</html>

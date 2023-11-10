@@ -1,0 +1,28 @@
+body, .main, .upper, .lower, .detail{
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+}
+
+.main, .lower{
+    flex-direction: column;
+}
+
+.income, .expense, .stats, .add-transaction, .main, .lower, .upper{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.add-transaction{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delete:hover{
+    cursor: pointer;
+}
